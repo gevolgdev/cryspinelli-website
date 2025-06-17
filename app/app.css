@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Remove cor de fundo do autocomplete - versão mais robusta */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: #854a7b !important;
+    background-color: transparent !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Para Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+    background-color: transparent !important;
+}
+
+/* Para outros navegadores */
+input:autofill,
+textarea:autofill,
+select:autofill {
+    background-color: transparent !important;
+}
+
+/* Para Firefox */
+input:-moz-autofill {
+    background-color: transparent !important;
+}
+
+::selection {
+    background: #431d3d;
+    color: white;
+}
+
+@theme {
+    --font-sans:
+        "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-primary: #ffd7be;
+    --color-orange: #ff914d;
+    --color-dark-purple: #431d3d;
+    --color-light-purple: #854a7b;
+    --color-text-gray: #6b7280 --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #808080;
+    --color-light-gray: #d9d9d9;
+    --color-dark-gray: #404040;
+    --color-red: #ff0000;
+    --color-green: #00ff00;
+}
+
+html,
+body {
+    @apply bg-[var(--color-primary)];
+
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-99%);
+    }
+}
+
+.animate-infinite-scroll {
+    @media (min-width: 1024px) {
+        animation: infinite-scroll 40s linear infinite;
+    }
+    @media (max-width: 1024px) {
+        animation: infinite-scroll 20s linear infinite;
+    }
+}
+
+/* Para pausar quando o mouse estiver em cima (opcional) */
+.animate-infinite-scroll:hover {
+    animation-play-state: paused;
+}
