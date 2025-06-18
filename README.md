@@ -1,4 +1,4 @@
-## Deploy
+## Deploy (legacy)
 
 Criar build da imagem:
 
