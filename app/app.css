@@ -49,6 +49,7 @@ input:-moz-autofill {
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --color-primary: #ffd7be;
     --color-orange: #ff914d;
+    --color-orange-hover: #ff7a2a;
     --color-dark-purple: #431d3d;
     --color-light-purple: #854a7b;
     --color-text-gray: #6b7280;
