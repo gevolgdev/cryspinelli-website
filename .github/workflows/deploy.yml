@@ -42,5 +42,5 @@ jobs:
                     --image us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/cryspinelli/cryspinelli-website:latest \
                     --region ${{ secrets.GCP_REGION }} \
                     --platform managed \
-                    --set-env-vars ${{ secrets.MONGO_URL }}
+                    --set-env-vars ${{ secrets.MONGO_URL }} \
                     --quiet
