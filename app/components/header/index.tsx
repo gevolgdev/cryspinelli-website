@@ -2,15 +2,18 @@ import { Link } from "react-router";
 
 function Header() {
     return (
-        <header className="flex items-center justify-between px-8 py-8 xl:px-12 xl:py-8">
-            <Link to="/">
-                <span className="font-[Aclonica] text-[20px] text-[var(--color-dark-purple)] xl:text-2xl">
+        <header className="flex justify-center px-4 py-4 xl:px-12 xl:py-8">
+            <Link to="/" className="flex items-center justify-center gap-1">
+                <img
+                    src="/app/assets/icons/logo-cryspinelli.svg"
+                    alt="Crys Pinelli"
+                    width={45}
+                    height={45}
+                />
+                <h1 className="xl:text-4.5xl w-full pt-5 text-center font-[Sacramento] text-4xl text-[var(--color-dark-purple)]">
                     Crys Pinelli
-                </span>
+                </h1>
             </Link>
-            <h3 className="font-[Aclonica] text-[13px] text-[var(--color-dark-purple)] xl:text-lg">
-                Aprendizagem Infantil
-            </h3>
         </header>
     );
 }

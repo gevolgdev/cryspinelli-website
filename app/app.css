@@ -51,13 +51,21 @@ input:-moz-autofill {
     --color-orange: #ff914d;
     --color-dark-purple: #431d3d;
     --color-light-purple: #854a7b;
-    --color-text-gray: #6b7280 --color-white: #ffffff;
+    --color-text-gray: #6b7280;
+    --color-white: #ffffff;
     --color-black: #000000;
     --color-gray: #808080;
     --color-light-gray: #d9d9d9;
     --color-dark-gray: #404040;
     --color-red: #ff0000;
     --color-green: #00ff00;
+}
+
+@font-face {
+    font-family: "Sacramento";
+    src: url("/app/assets/fonts/Sacramento-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 html,

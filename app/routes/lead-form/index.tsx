@@ -88,7 +88,7 @@ export default function LeadForm() {
                         className="mr-10"
                     />
                     <div className="w-[290px]">
-                        <Button href="https://wa.me/5511999999999">
+                        <Button href="https://chat.whatsapp.com/CsCMqWjVnWN0Eex2C1LC6h">
                             <MdWhatsapp size={20} className="text-white" />
                             Entrar no grupo
                         </Button>
