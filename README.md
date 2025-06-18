@@ -1,4 +1,4 @@
-## Deploy (legacy - Docker)
+## Deploy (legacy)
 
 Criar build da imagem:
 
