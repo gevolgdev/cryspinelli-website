@@ -22,6 +22,11 @@ export const links: Route.LinksFunction = () => [
         title: "Aclonica",
         href: "https://fonts.googleapis.com/css2?family=Aclonica&display=swap",
     },
+    {
+        rel: "stylesheet",
+        title: "Sacramento",
+        href: "https://fonts.googleapis.com/css2?family=Sacramento&display=swap",
+    },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
