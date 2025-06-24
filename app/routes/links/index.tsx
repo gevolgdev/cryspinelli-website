@@ -1,11 +1,6 @@
-import {
-    MdNorthEast,
-    MdOutlineArrowOutward,
-    MdOutlineTouchApp,
-} from "react-icons/md";
+import { MdOutlineArrowOutward, MdOutlineTouchApp } from "react-icons/md";
 import { useLoaderData } from "react-router";
-import { getAllLinks } from "~/http/get-all-links";
-import type { ILinkSchema } from "~/schemas/links.schema";
+import { getAllLinks } from "~/repository/get-all-links";
 
 export async function loader() {
     return await getAllLinks();

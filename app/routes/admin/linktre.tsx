@@ -2,7 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { MdDelete, MdError, MdLabel, MdLink } from "react-icons/md";
 import { useFetcher, useLoaderData } from "react-router";
-import { getAllLinks } from "~/http/get-all-links";
+import { getAllLinks } from "~/repository/get-all-links";
 import { linksSchema, type ILinkSchema } from "~/schemas/links.schema";
 
 export async function loader() {

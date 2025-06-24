@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import { Footer } from "~/components/footer";
 import { Header } from "~/components/header";
-import { getAllLinks } from "~/http/get-all-links";
+import { getAllLinks } from "~/repository/get-all-links";
 
 export async function loader() {
     return await getAllLinks();

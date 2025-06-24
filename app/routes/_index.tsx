@@ -16,7 +16,7 @@ export default function _index() {
         <>
             <Header />
             <main className="mb-10 sm:mb-20">
-                <section className="mb-10 flex flex-col gap-10 px-4 py-4 sm:mt-20 sm:mb-25 sm:px-12 sm:py-8">
+                <section className="mb-10 flex flex-col gap-10 px-4 py-4 sm:mt-10 sm:mb-25 sm:px-12 sm:py-8">
                     <div className="flex w-full flex-col items-center justify-center gap-4">
                         <h4 className="font-[Aclonica] text-sm text-[var(--color-light-purple)] sm:text-lg">
                             Artes manuais para crianças

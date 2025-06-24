@@ -2,6 +2,7 @@ import { EStorageKeys } from "app/enums/storageKey.enum";
 import { useEffect } from "react";
 import { MdDashboard, MdLink, MdPerson } from "react-icons/md";
 import { Link, Outlet, redirect, useLocation, useNavigate } from "react-router";
+import Logo from "~/assets/icons/logo-cryspinelli-v2.svg";
 
 export default function AdminLayout() {
     const navigate = useNavigate();
@@ -46,7 +47,11 @@ export default function AdminLayout() {
                         to="/"
                         className="font-[Aclonica] text-2xl text-[var(--color-orange)]"
                     >
-                        Crys Pinelli
+                        <img
+                            src={Logo}
+                            alt="Logo Cryspinelli"
+                            className="w-50 text-[var(--color-orange)]"
+                        />
                     </Link>
                 </div>
                 <nav className="space-y-2">
